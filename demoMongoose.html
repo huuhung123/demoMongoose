@@ -1,0 +1,33 @@
+<!-- 
+Request(request + request headers)
+Response(response data + response headers): Content-Type, Status
+-->
+
+<!-- 
+In student.js
+const mongoose = require('mongoose')
+
+const Schema = mongoose.Schema
+
+const studentSchema = new Schma({
+    name: String
+})
+
+const Student = mongoose.model('student', studentSchema)
+
+// export
+module.exports = Student
+-->
+
+<!-- Connecting with mongodb with mongoose
+const mongoose = require('mongoose')
+mongoose.Promise = global.Promise; // ES6 - promise(BlueBird and Q promises)
+
+mongoose.connect('mongodb://localhost/mongotube', {useNewUrlParser: true})
+
+mongoose.connection
+    .once('open', () => console.log('Connected'))
+    .on('error', error => {
+        console.log('Your Error', error)
+    })
+-->
